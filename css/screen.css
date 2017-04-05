@@ -1,0 +1,214 @@
+/* normalization */
+
+:root {
+--font-scale: calc(100% + .25vw);
+}
+
+html {
+font: 100%/1.25 sans-serif;
+/*--prefix exception--*/
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+
+}
+
+body {
+width: 100%;
+max-width: 90em;
+margin: 0 auto; 
+}
+
+img {
+width: auto;
+max-width: 100%;
+height: auto;
+vertical-align: middle;
+}
+
+/* navigation section */
+
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+white-space: nowrap;
+padding: 0;
+border: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
+overflow: hidden;
+}
+
+nav {
+background: #eee;
+padding: 1em;
+border-top: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+}
+
+/* hide details marker -- navigation section */
+
+nav summary {
+visibility: hidden;
+cursor: pointer;
+}
+
+nav .summary-group {
+float: left;
+visibility: visible;
+}
+
+/* show summary -- navigation section */
+
+nav .summary-group b {
+display: inline-block;
+text-transform: uppercase;
+vertical-align: middle;
+padding-bottom: .1em;
+border-bottom: 1px solid #999;
+}
+
+nav ol {
+list-style: none;
+padding-left: 0;
+margin: 1em 0 -1em;
+clear: both;
+}
+
+nav a {
+display: block;
+font-weight: bold;
+color: #999;
+text-decoration: none;
+padding: 1em;
+border-top: 1px solid #ddd;
+margin: 0 -1em;
+}
+
+nav a:hover,
+nav a:focus {
+color: #fff;
+background: #999;
+}
+
+/* banner */
+
+header{
+background-color: #888;
+padding: 3em;
+}
+
+a {
+color: #000;
+text-decoration: none;
+}
+
+#banner h1 {
+font: bold 2.8em/1.15 "Trebuchet MS", sans-serif;
+text-align: left;
+}
+
+#banner p {
+font: 1em/1.4 Georgia, serif;
+text-align: left;
+border-bottom: 3px solid #ccc;
+padding-bottom: 1em;
+}
+
+/* img navigation */
+
+/* overall */
+.project-sections {
+padding: 2em;
+}
+
+/* text */
+.project-header {
+font: normal 1em/1 "Trebuchet MS", sans-serif;
+margin-left: .75em;
+margin-bottom: 1.5em;
+}
+.project-title {
+font: 1em/1.5 Georgia, serif;
+margin-left: .75em;
+margin-top: .5em;
+}
+.project-subtitle {
+font: 1em/1.5 Georgia, serif;
+color: #ccc;
+margin-left: 2em;
+margin-top: -1em;
+}
+
+
+/* footer */
+
+.connection {
+background-color: #888;
+padding: 2em;
+margin-top: 1em;
+text-align: left;
+}
+
+.connection p,
+.connection a {
+font: .85em/1.5 Georgia, serif;
+color: #ccc;
+margin-top: -.5em;
+}
+
+/* about me page */
+/* overall */
+.about {
+padding: 2em;
+margin-top: 1em;
+text-align: center;
+}
+
+/* img */
+.about img {
+margin-top: 1em;
+width: 100%;
+}
+
+/* text */
+.about h3 {
+font: bold 1.8em/1.15 "Trebuchet MS", sans-serif;
+text-align: center;
+border-bottom: 2px solid #ccc;
+padding-bottom: .75em;
+}
+
+.about p {
+font: normal 1em/1.4 Georgia, serif;
+}
+
+/* resume buttons */
+.resumebutton {
+border: 2px solid #ccc;
+margin: 2.75em 0; 
+padding: .25em;
+}
+
+/* artist resume page */
+/* overall */
+.resume-body {
+margin: 2em;
+}
+
+/* text */
+.jobtitle {
+font: bold 1.1em/1.15 "Trebuchet MS", sans-serif;
+}
+
+.resume-body h4 {
+font: bold 1em/1.15 "Trebuchet MS", sans-serif;
+color: gray;
+}
+
+/* portfolio */
+/* overall */
+.portfolio-body {
+margin: 2em;
+}
