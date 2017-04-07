@@ -96,13 +96,14 @@ background: #999;
 
 header{
 background-color: #888;
-padding: 3em;
+padding: 1em;
 }
 
 a {
 color: #000;
 text-decoration: none;
 }
+
 
 #banner h1 {
 font: bold 2.8em/1.15 "Trebuchet MS", sans-serif;
@@ -111,29 +112,33 @@ text-align: left;
 
 #banner p {
 font: 1em/1.4 Georgia, serif;
-text-align: left;
 border-bottom: 3px solid #ccc;
+text-align: left;
 padding-bottom: 1em;
 }
+
 
 /* img navigation */
 
 /* overall */
 .project-sections {
-padding: 2em;
+padding: 1em 2em;
 }
 
 /* text */
 .project-header {
-font: normal 1em/1 "Trebuchet MS", sans-serif;
-margin-left: .75em;
-margin-bottom: 1.5em;
+font: normal 1.4em/1 "Trebuchet MS", sans-serif;
+color: #aaa;
+margin: 1em 0 .5em 1.4em;
+
 }
+
 .project-title {
 font: 1em/1.5 Georgia, serif;
 margin-left: .75em;
 margin-top: .5em;
 }
+
 .project-subtitle {
 font: 1em/1.5 Georgia, serif;
 color: #ccc;
@@ -153,7 +158,7 @@ text-align: left;
 
 .connection p,
 .connection a {
-font: .85em/1.5 Georgia, serif;
+font: 1em/1.5 Georgia, serif;
 color: #ccc;
 margin-top: -.5em;
 }
@@ -211,4 +216,15 @@ color: gray;
 /* overall */
 .portfolio-body {
 margin: 2em;
+}
+
+@supports (position: sticky) {
+
+header {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #000;
+  background: #999;
+}
+
 }
